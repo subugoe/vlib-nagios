@@ -1,0 +1,5 @@
+open 80.153.241.36:9999 
+format usmarc
+find @attr 1=1016 earth
+s
+quit

@@ -1,0 +1,5 @@
+open opac.nebis.ch:9909/NEBIS_UTF
+format marc21
+find @attr 1=1016 earth
+s
+quit

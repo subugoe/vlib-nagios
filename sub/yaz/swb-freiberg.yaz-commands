@@ -1,0 +1,5 @@
+open z3950.bsz-bw.de:20215/swb
+format marc21
+find @and @attr 1=1044 105 @attr 1=1016 earth
+s
+quit

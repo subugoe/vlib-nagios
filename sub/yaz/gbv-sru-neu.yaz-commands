@@ -1,0 +1,6 @@
+open http://sru.gbv.de/gvk
+find bread
+schema turbomarc
+s
+quit
+

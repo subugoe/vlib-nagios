@@ -1,0 +1,5 @@
+open 134.76.163.148:2010/repro 
+format xml
+find @attr 1=1016 earth
+s
+quit

@@ -1,0 +1,5 @@
+open tcp:z3950.gbv.de:20012/gvk
+format marc21
+find @attr 1=1016 bread
+s
+quit

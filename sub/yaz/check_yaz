@@ -1,0 +1,42 @@
+#!/usr/bin/python
+#encoding=utf-8
+"""
+Nagios command to check Z39.50/SRU queries run by yaz-client.
+
+Requires as input paramter a file name with yaz-client commands
+	that open a connection, run a query and quit.
+
+
+January 2010 by Sven-S. Porst, SUB Göttingen
+<porst@sub.uni-goettingen.de>
+"""
+import sys
+import subprocess
+
+
+if len(sys.argv) != 2:
+        print "ERROR: wrong number of arguments"
+        sys.exit(3)
+
+fileName = sys.argv[1]
+
+command = ["/usr/local/bin/yaz-client", "-f", fileName]
+
+process = subprocess.Popen(command, stdout=subprocess.PIPE)
+[output, errors] = process.communicate()
+
+if output.find("Connecting...OK.") != -1:
+        if output.find("Search was a success.") != -1 or output.find("Received SRW SearchRetrieve Response") != -1:
+                print "Search OK"
+		# print output
+                sys.exit(0)
+        else:
+                print "Could connect but Search failed"
+                sys.exit(1)
+else:
+        print "Connecting to Server failed"
+        sys.exit(2)
+
+
+
+

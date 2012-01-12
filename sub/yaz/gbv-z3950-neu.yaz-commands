@@ -1,0 +1,5 @@
+open sru.gbv.de/gvk
+format xml
+find @attr 1=1016 bread
+s
+quit

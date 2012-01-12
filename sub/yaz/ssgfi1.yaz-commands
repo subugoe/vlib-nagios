@@ -1,0 +1,4 @@
+open tcp:ssgfi1.sub.uni-goettingen.de:2020/math
+find @attr 1=1016 atiyah
+s
+quit

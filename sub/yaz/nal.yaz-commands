@@ -1,0 +1,5 @@
+open agricola.nal.usda.gov:7190/Voyager 
+format marc21
+find @attr 1=1016 earth
+s
+quit
