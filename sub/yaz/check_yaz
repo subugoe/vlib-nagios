@@ -26,10 +26,19 @@ process = subprocess.Popen(command, stdout=subprocess.PIPE)
 [output, errors] = process.communicate()
 
 if output.find("Connecting...OK.") != -1:
-        if output.find("Search was a success.") != -1 or output.find("Received SRW SearchRetrieve Response") != -1:
+        if output.find("Search was a success.") != -1:
+		# Successful Z39.50 response
                 print "Search OK"
-		# print output
                 sys.exit(0)
+	elif output.find("Received SRW SearchRetrieve Response") != -1:
+		# SRU response
+		if output.find("<diagnostic ") != -1:
+			# Erroneous SRU response
+			print "Could connect but Output failed"
+			sys.exit(1)
+		else:
+			print "Search OK"
+			sys.exit(0)
         else:
                 print "Could connect but Search failed"
                 sys.exit(1)

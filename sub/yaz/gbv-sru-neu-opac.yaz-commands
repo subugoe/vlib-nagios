@@ -1,4 +1,4 @@
-open http://sru.gbv.de/gvk
+open http://sru.gbv.de/opac-de-7
 find gaga
 schema turbomarc
 s
