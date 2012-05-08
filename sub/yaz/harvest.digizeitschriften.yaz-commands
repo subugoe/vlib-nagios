@@ -1,0 +1,6 @@
+open http://vlib.sub.uni-goettingen.de/solr/digizeitschriften
+sru solr
+f hilbert 
+s 1
+quit
+

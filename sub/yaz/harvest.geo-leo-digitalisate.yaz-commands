@@ -1,0 +1,6 @@
+open http://vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate
+sru solr
+f earthquake
+s 1
+quit
+

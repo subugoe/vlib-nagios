@@ -1,0 +1,6 @@
+open http://vlib.sub.uni-goettingen.de/solr/math-arxiv
+sru solr
+f atiyah
+s 1
+quit
+
