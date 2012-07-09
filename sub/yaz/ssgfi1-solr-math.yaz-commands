@@ -1,0 +1,6 @@
+open http://ssgfi1.sub.uni-goettingen.de:8081/solr/math
+sru solr
+f atiyah
+s 1
+quit
+
