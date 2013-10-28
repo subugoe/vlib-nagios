@@ -1,6 +1,0 @@
-open http://gso.gbv.de/sru/DB=2.1/
-sru GET 1.1
-find bread
-s
-quit
-

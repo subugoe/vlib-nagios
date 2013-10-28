@@ -1,6 +1,0 @@
-open http://e-docs.geo-leo.de/SRW/search/
-sru get 1.1
-find earthquake
-s
-quit
-

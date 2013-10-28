@@ -1,6 +1,0 @@
-open http://goedoc.uni-goettingen.de:8080/SRW/search/DSpace
-sru get 1.1
-find genome
-s
-quit
-
