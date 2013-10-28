@@ -1,4 +1,4 @@
-open http://vlib.sub.uni-goettingen.de/solr/geo-leo-artikel
+open http://solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel
 sru solr
 f earthquake
 s 1

@@ -1,4 +1,4 @@
-open http://vlib.sub.uni-goettingen.de/solr/math-arxiv
+open http://solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv
 sru solr
 f atiyah
 s 1

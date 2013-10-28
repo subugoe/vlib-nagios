@@ -1,4 +1,4 @@
-open http://vlib.sub.uni-goettingen.de/solr/digizeitschriften
+open http://solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften
 sru solr
 f hilbert 
 s 1

@@ -1,0 +1,6 @@
+open http://solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea
+sru solr
+f ocean
+s 1
+quit
+

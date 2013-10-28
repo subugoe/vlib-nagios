@@ -1,0 +1,6 @@
+open http://solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar
+sru solr
+f Lossau
+s 1
+quit
+

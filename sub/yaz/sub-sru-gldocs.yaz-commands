@@ -1,0 +1,6 @@
+open http://sru.sub.uni-goettingen.de/dspace/geo-leo
+find earthquake
+schema custom
+s
+quit
+

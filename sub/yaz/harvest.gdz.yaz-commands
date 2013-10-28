@@ -1,0 +1,6 @@
+open http://solr-harvest.tc.sub.uni-goettingen.de/solr/gdz
+sru solr
+f Hilbert
+s 1
+quit
+
